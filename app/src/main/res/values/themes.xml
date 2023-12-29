@@ -1,9 +1,15 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.RoomDemo" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Theme.RoomDemo" parent="Theme.Material3.DayNight">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+         <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="statusBarBackground">@color/colorPrimaryDark</item>
+        <item name="actionBarStyle">@style/MyActionBarDarkStyle</item>
     </style>
 
-    <style name="Theme.RoomDemo" parent="Base.Theme.RoomDemo" />
+    <style name="MyActionBarDarkStyle" parent="Widget.MaterialComponents.ActionBar.Primary">
+        <item name="background">@color/colorPrimary</item>
+        <item name="titleTextColor">@color/white</item>
+    </style>
 </resources>
